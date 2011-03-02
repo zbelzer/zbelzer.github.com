@@ -1,3 +1,41 @@
 @import "mixins/syntax";
+@import "mixins/base";
 
 // add your styles, see http://compass-style.org/
+body {
+  background-color: #607480;
+}
+
+#page {
+  @include container;
+  @include min-height(1000px);
+  @include border-radius;
+
+  background-color: #fff;
+  margin-top: 5em;
+  padding: 2em 1em 0 1em;
+}
+
+#header {
+  margin: 2em 0 5em 0;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    h1 {
+      font-weight: bold;
+      font-size: 3em; 
+      color: $font-color;
+    }
+  }
+}
+
+.highlight {
+  @include border-radius;
+
+  padding: 1em;
+  margin: 1em;
+  font-size: 0.8em;
+  font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  background: #000000;
+}

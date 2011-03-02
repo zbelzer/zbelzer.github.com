@@ -10,15 +10,15 @@ markdown: rdiscount
 domain: zbelzer.github.com
 title: "Belzer's Blog"
 author: Zachary Belzer
-email: me@example.com
+email: zbelzer@gmail.com
 
 # configuration for ehancements, uncomment to enable
 
 # feedburner:
 #   id: feedburnerid
 
-# google_analytics:
-#   account: UA-XXXXX-X
+google_analytics:
+  account: UA-21759057-1
 
 github:
   username: zbelzer
