@@ -6,6 +6,21 @@ body {
   background-color: #607480;
 }
 
+#header {
+  margin: 1em 0 3em 0;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    h1 {
+      font-weight: bold;
+      font-size: 3em; 
+      color: $font-color;
+    }
+  }
+}
+
+
 #page {
   @include container;
   @include min-height(1000px);
@@ -16,16 +31,23 @@ body {
   padding: 2em 1em 0 1em;
 }
 
-#header {
-  margin: 2em 0 5em 0;
-  text-align: center;
+#posts {
+  .post {
+    .date {
+      padding-left: 1em;
+    }
 
-  a {
-    text-decoration: none;
-    h1 {
-      font-weight: bold;
-      font-size: 3em; 
-      color: $font-color;
+    .content {
+      padding-top: 1em;
+    }
+
+    a {
+      text-decoration: none;
+      h3 {
+        font-weight: bold;
+        color: $font-color;
+        font-size: 1.5em;
+      }
     }
   }
 }

@@ -4,11 +4,12 @@ description: A description about my blog homepage
 ---
 
 <div id="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:5 %}
   <div class="post">
     <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-    <span>{{ post.date | date_to_string }}</span> - 
-    <div>{{ post.content }}</div>
+    <span class="date">{{ post.date | date_to_string }}</span>
+    <div class="content">{{ post.content }}</div>
   </div>
+  <br />
   {% endfor %}
 </div>
