@@ -197,6 +197,30 @@ a img {
 body {
   background-color: #607480;
 }
+body h1 {
+  font-weight: bold;
+  color: #333333;
+  font-size: 3em;
+}
+body h2 {
+  font-weight: bold;
+  color: #333333;
+  font-size: 1.8em;
+}
+body h3 {
+  font-weight: bold;
+  color: #333333;
+  font-size: 1.5em;
+}
+body h4 {
+  font-weight: bold;
+  color: #333333;
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+body p {
+  margin-top: 1em;
+}
 
 #header {
   margin: 1em 0 3em 0;
@@ -205,10 +229,10 @@ body {
 #header a {
   text-decoration: none;
 }
-#header a h1 {
-  font-weight: bold;
-  font-size: 3em;
-  color: #333333;
+
+#body {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 #page {
@@ -230,19 +254,15 @@ body {
   padding: 2em 1em 0 1em;
 }
 
-#posts .post .date {
+#related, #comments {
+  margin-top: 1em;
+}
+
+.post .date {
   padding-left: 1em;
 }
-#posts .post .content {
-  padding-top: 1em;
-}
-#posts .post a {
+.post a {
   text-decoration: none;
-}
-#posts .post a h3 {
-  font-weight: bold;
-  color: #333333;
-  font-size: 1.5em;
 }
 
 .highlight {
@@ -257,4 +277,8 @@ body {
   font-size: 0.8em;
   font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
   background: #000000;
+}
+
+code {
+  font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }

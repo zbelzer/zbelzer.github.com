@@ -23,5 +23,5 @@ google_analytics:
 github:
   username: zbelzer
 
-# disqus:
-#   id: disqusid
+disqus:
+  id: belzersblog
